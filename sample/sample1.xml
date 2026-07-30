@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ex="http://prgmon.com/ontology/tutorial/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:base="http://prgmon.com/onotology/tutorial">
+  <owl:Class rdf:about="ex:Organism">
+    <rdfs:subClassOf rdf:resource="Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="ex:Robot">
+    <rdfs:subClassOf rdf:resource="Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="ex:Cat">
+    <rdfs:subClassOf rdf:resource="ex:Animal"/>
+  </owl:Class>
+  <owl:Class rdf:about="ex:NeuroRobot">
+    <rdfs:subClassOf rdf:resource="ex:Animal"/>
+  </owl:Class>
+  <owl:Class rdf:about="ex:Animal">
+    <rdfs:subClassOf rdf:resource="ex:Organism"/>
+  </owl:Class>
+  <owl:Class rdf:about="ex:NeuroRobot">
+    <rdfs:subClassOf rdf:resource="ex:Robot"/>
+  </owl:Class>
+  <owl:Class rdf:about="ex:Organism">
+    <owl:disjointWith rdf:resource="ex:Robot"/>
+  </owl:Class>
+</rdf:RDF>
