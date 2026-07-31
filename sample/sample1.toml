@@ -11,22 +11,6 @@
 violation_score = 4.0
 
 [[subClassOf]]
-subject = "ex:Organism"
-parent = "Thing"
-priority = 1.0
-violation = 0
-depth = 1
-repair_cost = 9.223372036854776e18
-
-[[subClassOf]]
-subject = "ex:Robot"
-parent = "Thing"
-priority = 1.0
-violation = 0
-depth = 1
-repair_cost = 9.223372036854776e18
-
-[[subClassOf]]
 subject = "ex:Cat"
 parent = "ex:Animal"
 priority = 1.0
@@ -57,6 +41,38 @@ priority = 0.8
 violation = 1
 depth = 3
 repair_cost = 0.125
+
+[[subClassOf]]
+subject = "ex:Organism"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:Organism"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:Organism"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:Robot"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
 
 [[disjointWith]]
 left = "ex:Organism"

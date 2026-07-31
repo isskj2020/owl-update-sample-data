@@ -7,13 +7,13 @@
     <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/1#Animal"/>
   </owl:Class>
   <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/1#Animal">
+    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/1#Cat"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/1#Animal">
     <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/1#Organism"/>
   </owl:Class>
   <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/1#NeuroRobot">
     <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/1#Robot"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/1#Organism">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/1#Organism">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>

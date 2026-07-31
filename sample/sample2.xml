@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ex="http://prgmon.com/ontology/tutorial/2#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:base="http://prgmon.com/onotology/tutorial2">
-  <owl:Class rdf:about="ex:Organism">
-    <rdfs:subClassOf rdf:resource="Thing"/>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/2#Cat">
+    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/2#Animal"/>
   </owl:Class>
-  <owl:Class rdf:about="ex:Robot">
-    <rdfs:subClassOf rdf:resource="Thing"/>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/2#NeuroRobot">
+    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/2#Animal"/>
   </owl:Class>
-  <owl:Class rdf:about="ex:Cat">
-    <rdfs:subClassOf rdf:resource="ex:Animal"/>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/2#Animal">
+    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/2#Organism"/>
   </owl:Class>
-  <owl:Class rdf:about="ex:NeuroRobot">
-    <rdfs:subClassOf rdf:resource="ex:Animal"/>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/2#NeuroRobot">
+    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/2#Robot"/>
   </owl:Class>
-  <owl:Class rdf:about="ex:Animal">
-    <rdfs:subClassOf rdf:resource="ex:Organism"/>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/2#Organism">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
-  <owl:Class rdf:about="ex:NeuroRobot">
-    <rdfs:subClassOf rdf:resource="ex:Robot"/>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/2#Organism">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
-  <owl:Class rdf:about="ex:Organism">
-    <owl:disjointWith rdf:resource="ex:Robot"/>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/2#Robot">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/2#Organism">
+    <owl:disjointWith rdf:resource="http://prgmon.com/ontology/tutorial/2#Robot"/>
   </owl:Class>
 </rdf:RDF>
