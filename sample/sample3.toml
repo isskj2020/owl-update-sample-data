@@ -8,7 +8,7 @@
 "xmlns:xsd" = "http://www.w3.org/2001/XMLSchema#"
 
 [status]
-violation_score = 10.0
+violation_score = 8.0
 
 [[subClassOf]]
 subject = "ex:BigFoot"
@@ -54,17 +54,17 @@ repair_cost = 0.125
 subject = "ex:Animal"
 parent = "ex:Organism"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 2
-repair_cost = 0.25
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:Human"
 parent = "ex:Organism"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 2
-repair_cost = 0.25
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:NeuroRobot"
@@ -83,43 +83,11 @@ depth = 2
 repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
-subject = "ex:Animal"
-parent = "owl:Thing"
-priority = 1.0
-violation = 0
-depth = 2
-repair_cost = 9.223372036854776e18
-
-[[subClassOf]]
 subject = "ex:Human"
 parent = "owl:Thing"
 priority = 1.0
 violation = 0
 depth = 2
-repair_cost = 9.223372036854776e18
-
-[[subClassOf]]
-subject = "ex:Human"
-parent = "owl:Thing"
-priority = 1.0
-violation = 0
-depth = 2
-repair_cost = 9.223372036854776e18
-
-[[subClassOf]]
-subject = "ex:Organism"
-parent = "owl:Thing"
-priority = 1.0
-violation = 0
-depth = 1
-repair_cost = 9.223372036854776e18
-
-[[subClassOf]]
-subject = "ex:Organism"
-parent = "owl:Thing"
-priority = 1.0
-violation = 0
-depth = 1
 repair_cost = 9.223372036854776e18
 
 [[subClassOf]]

@@ -33,9 +33,6 @@
   <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Organism">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Organism">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </owl:Class>
   <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Robot">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>

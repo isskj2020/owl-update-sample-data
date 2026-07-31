@@ -8,23 +8,23 @@
 "xmlns:xsd" = "http://www.w3.org/2001/XMLSchema#"
 
 [status]
-violation_score = 10.0
+violation_score = 4.0
 
 [[subClassOf]]
 subject = "ex:B"
 parent = "ex:A"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 2
-repair_cost = 0.25
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:C"
 parent = "ex:B"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 3
-repair_cost = 0.125
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:D"
@@ -46,33 +46,33 @@ repair_cost = 0.0078125
 subject = "ex:W"
 parent = "ex:V"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 2
-repair_cost = 0.25
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:X"
 parent = "ex:W"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 3
-repair_cost = 0.125
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:Y"
 parent = "ex:X"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 4
-repair_cost = 0.0625
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:Z"
 parent = "ex:Y"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 5
-repair_cost = 0.03125
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:D"
