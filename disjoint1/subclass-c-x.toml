@@ -1,0 +1,108 @@
+[namespaces]
+"xml:base" = "http://prgmon.com/ontology/tutorial/3"
+"xmlns:rdf" = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+"xmlns:rdfs" = "http://www.w3.org/2000/01/rdf-schema#"
+"xmlns:ex" = "http://prgmon.com/ontology/tutorial/3#"
+"xmlns:owl" = "http://www.w3.org/2002/07/owl#"
+"xmlns:xml" = "http://www.w3.org/XML/1998/namespace"
+"xmlns:xsd" = "http://www.w3.org/2001/XMLSchema#"
+
+[status]
+violation_score = 8.0
+
+[[subClassOf]]
+subject = "ex:B"
+parent = "ex:A"
+priority = 1.0
+violation = 1
+depth = 2
+repair_cost = 0.25
+
+[[subClassOf]]
+subject = "ex:C"
+parent = "ex:B"
+priority = 1.0
+violation = 1
+depth = 4
+repair_cost = 0.0625
+
+[[subClassOf]]
+subject = "ex:D"
+parent = "ex:C"
+priority = 1.0
+violation = 1
+depth = 5
+repair_cost = 0.03125
+
+[[subClassOf]]
+subject = "ex:E"
+parent = "ex:D"
+priority = 1.0
+violation = 1
+depth = 6
+repair_cost = 0.015625
+
+[[subClassOf]]
+subject = "ex:W"
+parent = "ex:V"
+priority = 1.0
+violation = 1
+depth = 2
+repair_cost = 0.25
+
+[[subClassOf]]
+subject = "ex:X"
+parent = "ex:W"
+priority = 1.0
+violation = 1
+depth = 3
+repair_cost = 0.125
+
+[[subClassOf]]
+subject = "ex:C"
+parent = "ex:X"
+priority = 1.0
+violation = 1
+depth = 4
+repair_cost = 0.0625
+
+[[subClassOf]]
+subject = "ex:Y"
+parent = "ex:X"
+priority = 1.0
+violation = 0
+depth = 4
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:Z"
+parent = "ex:Y"
+priority = 1.0
+violation = 0
+depth = 5
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:A"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:V"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[disjointWith]]
+left = "ex:B"
+right = "ex:W"
+priority = 1.0
+violation = 1
+depth = 2
+repair_cost = 0.25
+
