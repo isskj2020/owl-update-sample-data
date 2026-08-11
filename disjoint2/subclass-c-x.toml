@@ -8,7 +8,8 @@
 "xmlns:xsd" = "http://www.w3.org/2001/XMLSchema#"
 
 [status]
-violation_score = 6.0
+violation_score = 5.0
+decay_factor = 0.5
 
 [[subClassOf]]
 subject = "ex:B"
@@ -99,18 +100,18 @@ depth = 1
 repair_cost = 9.223372036854776e18
 
 [[disjointWith]]
-left = "ex:B"
-right = "ex:W"
+subject = "ex:B"
+object = "ex:W"
 priority = 1.0
 violation = 1
 depth = 2
 repair_cost = 0.25
 
 [[disjointWith]]
-left = "ex:D"
-right = "ex:Y"
+subject = "ex:D"
+object = "ex:Y"
 priority = 1.0
-violation = 1
+violation = 0
 depth = 5
-repair_cost = 0.03125
+repair_cost = 9.223372036854776e18
 

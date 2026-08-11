@@ -9,6 +9,7 @@
 
 [status]
 violation_score = 7.0
+decay_factor = 0.5
 
 [[subClassOf]]
 subject = "ex:Android"
@@ -83,8 +84,8 @@ depth = 1
 repair_cost = 9.223372036854776e18
 
 [[disjointWith]]
-left = "ex:Animal"
-right = "ex:Robot"
+subject = "ex:Animal"
+object = "ex:Robot"
 priority = 1.0
 violation = 1
 depth = 2

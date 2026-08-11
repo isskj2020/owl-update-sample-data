@@ -9,6 +9,7 @@
 
 [status]
 violation_score = 0.0
+decay_factor = 0.5
 
 [[subClassOf]]
 subject = "ex:B"
