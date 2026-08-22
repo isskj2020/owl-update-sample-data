@@ -1,11 +1,14 @@
+[ontology]
+IRI = "https://github.com/isskj2020/owl-update-sample-data/blob/main/disjoint2/subclass-ez-cx-av-dy.xml"
+versionIRI = "https://github.com/isskj2020/owl-update-sample-data/blob/main/disjoint2/subclass-ez-cx-av-dy.xml/0.0.1"
+
 [namespaces]
-"xml:base" = "http://prgmon.com/ontology/tutorial/3"
-"xmlns:rdf" = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-"xmlns:rdfs" = "http://www.w3.org/2000/01/rdf-schema#"
-"xmlns:ex" = "http://prgmon.com/ontology/tutorial/3#"
-"xmlns:owl" = "http://www.w3.org/2002/07/owl#"
-"xmlns:xml" = "http://www.w3.org/XML/1998/namespace"
-"xmlns:xsd" = "http://www.w3.org/2001/XMLSchema#"
+rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+rdfs = "http://www.w3.org/2000/01/rdf-schema#"
+ex = "https://github.com/isskj2020/owl-update-sample-data#"
+owl = "http://www.w3.org/2002/07/owl#"
+xml = "http://www.w3.org/XML/1998/namespace"
+xsd = "http://www.w3.org/2001/XMLSchema#"
 
 [status]
 violation_score = 8.0

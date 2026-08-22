@@ -1,61 +1,64 @@
+[ontology]
+IRI = "https://github.com/isskj2020/owl-update-sample-data/blob/main/complex/complex1.xml"
+versionIRI = "https://github.com/isskj2020/owl-update-sample-data/blob/main/complex/complex1.xml/0.0.1"
+
 [namespaces]
-"xml:base" = "http://prgmon.com/ontology/tutorial/3"
-"xmlns:rdf" = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-"xmlns:rdfs" = "http://www.w3.org/2000/01/rdf-schema#"
-"xmlns:ex" = "http://prgmon.com/ontology/tutorial/3#"
-"xmlns:owl" = "http://www.w3.org/2002/07/owl#"
-"xmlns:xml" = "http://www.w3.org/XML/1998/namespace"
-"xmlns:xsd" = "http://www.w3.org/2001/XMLSchema#"
+rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+rdfs = "http://www.w3.org/2000/01/rdf-schema#"
+ex = "https://github.com/isskj2020/owl-update-sample-data#"
+owl = "http://www.w3.org/2002/07/owl#"
+xml = "http://www.w3.org/XML/1998/namespace"
+xsd = "http://www.w3.org/2001/XMLSchema#"
 
 [status]
-violation_score = 15.0
+violation_score = 0.0
 decay_factor = 0.5
 
 [[subClassOf]]
 subject = "ex:2"
 parent = "ex:1"
 priority = 1.0
-violation = 1
+violation = false
 depth = 4
-repair_cost = 0.0625
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:3"
 parent = "ex:2"
 priority = 1.0
-violation = 1
+violation = false
 depth = 5
-repair_cost = 0.03125
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:4"
 parent = "ex:3"
 priority = 1.0
-violation = 1
+violation = false
 depth = 6
-repair_cost = 0.015625
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:5"
 parent = "ex:4"
 priority = 1.0
-violation = 1
+violation = false
 depth = 7
-repair_cost = 0.0078125
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:E"
 parent = "ex:5"
 priority = 1.0
-violation = 1
+violation = false
 depth = 8
-repair_cost = 0.00390625
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:B"
 parent = "ex:A"
 priority = 1.0
-violation = 0
+violation = false
 depth = 2
 repair_cost = 9.223372036854776e18
 
@@ -63,23 +66,23 @@ repair_cost = 9.223372036854776e18
 subject = "ex:C"
 parent = "ex:B"
 priority = 1.0
-violation = 1
+violation = false
 depth = 5
-repair_cost = 0.03125
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:D"
 parent = "ex:C"
 priority = 1.0
-violation = 1
+violation = false
 depth = 6
-repair_cost = 0.015625
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:W"
 parent = "ex:V"
 priority = 1.0
-violation = 0
+violation = false
 depth = 2
 repair_cost = 9.223372036854776e18
 
@@ -87,7 +90,7 @@ repair_cost = 9.223372036854776e18
 subject = "ex:X"
 parent = "ex:W"
 priority = 1.0
-violation = 0
+violation = false
 depth = 3
 repair_cost = 9.223372036854776e18
 
@@ -95,15 +98,15 @@ repair_cost = 9.223372036854776e18
 subject = "ex:2"
 parent = "ex:X"
 priority = 1.0
-violation = 1
+violation = false
 depth = 4
-repair_cost = 0.0625
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:Y"
 parent = "ex:X"
 priority = 1.0
-violation = 0
+violation = false
 depth = 4
 repair_cost = 9.223372036854776e18
 
@@ -111,15 +114,15 @@ repair_cost = 9.223372036854776e18
 subject = "ex:C"
 parent = "ex:Y"
 priority = 1.0
-violation = 1
+violation = false
 depth = 5
-repair_cost = 0.03125
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:Z"
 parent = "ex:Y"
 priority = 1.0
-violation = 0
+violation = false
 depth = 5
 repair_cost = 9.223372036854776e18
 
@@ -127,23 +130,23 @@ repair_cost = 9.223372036854776e18
 subject = "ex:5"
 parent = "ex:Z"
 priority = 1.0
-violation = 1
+violation = false
 depth = 7
-repair_cost = 0.0078125
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:E"
 parent = "ex:Z"
 priority = 1.0
-violation = 1
+violation = false
 depth = 8
-repair_cost = 0.00390625
+repair_cost = 9.223372036854776e18
 
 [[subClassOf]]
 subject = "ex:1"
 parent = "owl:Thing"
 priority = 1.0
-violation = 0
+violation = false
 depth = 1
 repair_cost = 9.223372036854776e18
 
@@ -151,7 +154,7 @@ repair_cost = 9.223372036854776e18
 subject = "ex:A"
 parent = "owl:Thing"
 priority = 1.0
-violation = 0
+violation = false
 depth = 1
 repair_cost = 9.223372036854776e18
 
@@ -159,7 +162,7 @@ repair_cost = 9.223372036854776e18
 subject = "ex:V"
 parent = "owl:Thing"
 priority = 1.0
-violation = 0
+violation = false
 depth = 1
 repair_cost = 9.223372036854776e18
 
@@ -167,15 +170,15 @@ repair_cost = 9.223372036854776e18
 subject = "ex:2"
 object = "ex:X"
 priority = 1.0
-violation = 1
+violation = false
 depth = 4
-repair_cost = 0.0625
+repair_cost = 9.223372036854776e18
 
 [[disjointWith]]
 subject = "ex:4"
 object = "ex:C"
 priority = 1.0
-violation = 0
+violation = false
 depth = 6
 repair_cost = 9.223372036854776e18
 
@@ -183,15 +186,15 @@ repair_cost = 9.223372036854776e18
 subject = "ex:5"
 object = "ex:Z"
 priority = 1.0
-violation = 1
+violation = false
 depth = 7
-repair_cost = 0.0078125
+repair_cost = 9.223372036854776e18
 
 [[disjointWith]]
 subject = "ex:A"
 object = "ex:1"
 priority = 1.0
-violation = 0
+violation = false
 depth = 1
 repair_cost = 9.223372036854776e18
 
@@ -199,15 +202,15 @@ repair_cost = 9.223372036854776e18
 subject = "ex:B"
 object = "ex:W"
 priority = 1.0
-violation = 1
+violation = false
 depth = 2
-repair_cost = 0.25
+repair_cost = 9.223372036854776e18
 
 [[disjointWith]]
 subject = "ex:D"
 object = "ex:Y"
 priority = 1.0
-violation = 0
+violation = false
 depth = 6
 repair_cost = 9.223372036854776e18
 
@@ -215,7 +218,7 @@ repair_cost = 9.223372036854776e18
 subject = "ex:V"
 object = "ex:1"
 priority = 1.0
-violation = 1
+violation = false
 depth = 1
-repair_cost = 0.5
+repair_cost = 9.223372036854776e18
 

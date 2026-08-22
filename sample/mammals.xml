@@ -1,45 +1,109 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ex="http://prgmon.com/ontology/tutorial/3#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:base="http://prgmon.com/ontology/tutorial/3">
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Bird">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Animal"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Fish">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Animal"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Mammal">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Animal"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Bat">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Bird"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Duck">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Bird"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Duck">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Fish"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Whale">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Fish"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Bat">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Mammal"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Whale">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Mammal"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Animal">
-    <rdfs:subClassOf rdf:resource="http://prgmon.com/ontology/tutorial/3#Organism"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Organism">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Bird">
-    <owl:disjointWith rdf:resource="http://prgmon.com/ontology/tutorial/3#Fish"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Bird">
-    <owl:disjointWith rdf:resource="http://prgmon.com/ontology/tutorial/3#Mammal"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://prgmon.com/ontology/tutorial/3#Fish">
-    <owl:disjointWith rdf:resource="http://prgmon.com/ontology/tutorial/3#Mammal"/>
-  </owl:Class>
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/isskj2020/owl-update-sample-data/blob/main/sample/mammals.xml#"
+     xml:base="https://github.com/isskj2020/owl-update-sample-data/blob/main/sample/mammals.xml"
+     xmlns:ex="https://github.com/isskj2020/owl-update-sample-data#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/isskj2020/owl-update-sample-data/blob/main/sample/mammals.xml">
+        <owl:versionIRI rdf:resource="https://github.com/isskj2020/owl-update-sample-data/blob/main/sample/mammals.xml/0.0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://github.com/isskj2020/owl-update-sample-data#Animal -->
+
+
+    <owl:Class rdf:about="https://github.com/isskj2020/owl-update-sample-data#Animal">
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/isskj2020/owl-update-sample-data#Bat -->
+
+
+    <owl:Class rdf:about="https://github.com/isskj2020/owl-update-sample-data#Bat">
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Bird"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Mammal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/isskj2020/owl-update-sample-data#Bird -->
+
+
+    <owl:Class rdf:about="https://github.com/isskj2020/owl-update-sample-data#Bird">
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Animal"/>
+        <owl:disjointWith rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Fish"/>
+        <owl:disjointWith rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Mammal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/isskj2020/owl-update-sample-data#Duck -->
+
+
+    <owl:Class rdf:about="https://github.com/isskj2020/owl-update-sample-data#Duck">
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Bird"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Fish"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/isskj2020/owl-update-sample-data#Fish -->
+
+
+    <owl:Class rdf:about="https://github.com/isskj2020/owl-update-sample-data#Fish">
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Animal"/>
+        <owl:disjointWith rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Mammal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/isskj2020/owl-update-sample-data#Mammal -->
+
+
+    <owl:Class rdf:about="https://github.com/isskj2020/owl-update-sample-data#Mammal">
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/isskj2020/owl-update-sample-data#Organism -->
+
+
+    <owl:Class rdf:about="https://github.com/isskj2020/owl-update-sample-data#Organism">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/isskj2020/owl-update-sample-data#Whale -->
+
+
+    <owl:Class rdf:about="https://github.com/isskj2020/owl-update-sample-data#Whale">
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Fish"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/isskj2020/owl-update-sample-data#Mammal"/>
+    </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.5.1) https://github.com/owlcs/owlapi/ -->
+
+
