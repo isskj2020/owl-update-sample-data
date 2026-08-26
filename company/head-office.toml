@@ -1,0 +1,89 @@
+[ontology]
+IRI = "https://github.com/isskj2020/owl-update-sample-data/blob/main/company/head-office.xml"
+versionIRI = "https://github.com/isskj2020/owl-update-sample-data/blob/main/company/head-office.xml/0.0.1"
+
+[namespaces]
+rdfs = "http://www.w3.org/2000/01/rdf-schema#"
+owl = "http://www.w3.org/2002/07/owl#"
+xml = "http://www.w3.org/XML/1998/namespace"
+ex = "https://github.com/isskj2020/owl-update-sample-data#"
+rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xsd = "http://www.w3.org/2001/XMLSchema#"
+
+
+[status]
+violation_score = 0.0
+decay_factor = 0.5
+
+[[subClassOf]]
+subject = "ex:Branch-A"
+parent = "ex:HeadOffice"
+priority = 1.0
+violation = 0
+depth = 2
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:Branch-B"
+parent = "ex:HeadOffice"
+priority = 1.0
+violation = 0
+depth = 2
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:HeadOffice"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:IT"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:Product"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[subClassOf]]
+subject = "ex:Sales"
+parent = "owl:Thing"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[disjointWith]]
+subject = "ex:IT"
+object = "ex:Product"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[disjointWith]]
+subject = "ex:IT"
+object = "ex:Sales"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
+[[disjointWith]]
+subject = "ex:Product"
+object = "ex:Sales"
+priority = 1.0
+violation = 0
+depth = 1
+repair_cost = 9.223372036854776e18
+
